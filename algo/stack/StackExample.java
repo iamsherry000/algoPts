@@ -1,10 +1,10 @@
 package algo.stack;
 
 public class StackExample {
-    private Stack<Integer> stack;
+    private CustomStack<Integer> stack;
 
     public StackExample(int size) {
-        stack = new Stack<>(size);
+        stack = new CustomStack<>(size);
     }
 
     public void ShowStackExample() {

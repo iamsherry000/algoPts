@@ -1,11 +1,11 @@
 package algo.stack;
 
-public class Stack<T> {
+public class CustomStack<T> {
     private int maxSize;
     private T[] stackArray;
     private int top;
 
-    public Stack(int size) {
+    public CustomStack(int size) {
         this.maxSize = size;
         this.stackArray = (T[]) new Object[maxSize];
         this.top = -1; // no items in the stack
@@ -52,4 +52,6 @@ public class Stack<T> {
             System.out.println(stackArray[i]);
         }
     }
+
+    // 缺少動態堆疊
 }
