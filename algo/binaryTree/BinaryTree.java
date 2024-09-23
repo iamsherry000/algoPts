@@ -1,5 +1,7 @@
 package algo.binaryTree;
 
+// import algo.stack.CustomStack;
+
 public class BinaryTree {
     
     static class TreeNode { // 定義樹的節點
@@ -22,28 +24,34 @@ public class BinaryTree {
 
     // 插入節點
     public void insert(int value) {
-        root = insertRec(root, value);
+        root = insertResult(root, value);
     }
 
-    private TreeNode insertRec(TreeNode root, int value) {
+    private TreeNode insertResult(TreeNode root, int value) {
         if(root == null) {
             root = new TreeNode(value);
             return root;
         }
+
+        // renew root.left or root.right 
         if(value < root.value) {
-            root.left = insertRec(root.left, value);
+            root.left = insertResult(root.left, value);
         }
         else if(value > root.value) {
-            root.right = insertRec(root.right, value);
+            root.right = insertResult(root.right, value);
         }
 
         return root;
     }
 
-    // 使用 Stack 進行前序遍歷 (Pre-order Traversal)
-    public void stackPreorder() {
-        if(root == null) return;
-        
-        
+    // Search certain node in BT
+    public boolean search(int value) {
+        return searchResult(root, value);
+    }
+
+    private boolean searchResult(TreeNode root, int value) {
+        if(root == null) return false;
+        if(root.value == value) return true;
+        return value < root.value ? searchResult(root.left, value) : searchResult(root.right, value);
     }
 }
