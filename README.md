@@ -17,6 +17,14 @@ This is practice of algorithm
 5. printQueue
 
 ## About Binary Tree
+1. search
+2. delete
+3. getHeight
+4. size
+5. isBalanced
+6. getMirror
+7. TraversalResult
+### Binary tree apply 
 1. T -> BT 一般樹轉換為二元樹
 2. inorder/ preorder/ postorder
 2.1. according the order, show BT
