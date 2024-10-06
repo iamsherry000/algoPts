@@ -5,6 +5,7 @@ public class CustomStack<T> {
     private T[] stackArray;
     private int top;
 
+    @SuppressWarnings("unchecked")
     public CustomStack(int size) {
         this.maxSize = size;
         this.stackArray = (T[]) new Object[maxSize];

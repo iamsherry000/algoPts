@@ -7,6 +7,7 @@ public class CustomQueue<T> {
     private int rear;
     private int nItems;
 
+    @SuppressWarnings("unchecked")
     public CustomQueue(int size) {
         this.maxSize = size;
         this.queueArray = (T[]) new Object[maxSize];
