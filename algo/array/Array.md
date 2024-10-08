@@ -11,6 +11,8 @@
     - 2 main data structure tools: 1. arrays 2. pointer based (linked)
 
 ## Static sequence interface: maintain a sequence of items to these operations
+
+## Operations 
 - build(x): make new DS for item in x 
 - len(): return n
 - iter_seq(): output items in seq order
@@ -23,3 +25,4 @@
 
 ## Summary
 - 靜態陣列不能直接進行動態操作，但可以通過創建新陣列和拷貝數據來實現低效率的動態行為。
+(bad for dyna,oc operations, but still could do)

@@ -1,4 +1,5 @@
 import algo.binaryTree.BTExample;
+import algo.linkedList.LinkedListEx;
 import algo.queue.QueueExample;
 import algo.stack.StackExample;
 import algo.array.StaticArrayEx;
@@ -8,7 +9,8 @@ public class Main {
         // runStackExample();
         // runQueueExample();
         // runBTExample(); // unfinished
-        runStaticArrayExample();
+        // runStaticArrayExample();
+        runLinkedListExample();
     }
 
     public static void runStackExample() { // finished
@@ -32,5 +34,10 @@ public class Main {
     public static void runStaticArrayExample() {
         StaticArrayEx staticArray = new StaticArrayEx();
         staticArray.ShowStaticArrayExample();
+    }
+
+    public static void runLinkedListExample() {
+        LinkedListEx listExample = new LinkedListEx();
+        listExample.ShowLinkedListExample();
     }
 }
