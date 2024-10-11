@@ -3,6 +3,7 @@ import algo.linkedList.LinkedListEx;
 import algo.queue.QueueExample;
 import algo.stack.StackExample;
 import algo.array.StaticArrayEx;
+import algo.sort.SortEx;
 
 public class Main {
     public static void main(String[] args) {
@@ -10,7 +11,8 @@ public class Main {
         // runQueueExample();
         // runBTExample(); // unfinished
         // runStaticArrayExample();
-        runLinkedListExample();
+        // runLinkedListExample();
+        runSortsExample();
     }
 
     public static void runStackExample() { // finished
@@ -39,5 +41,10 @@ public class Main {
     public static void runLinkedListExample() {
         LinkedListEx listExample = new LinkedListEx();
         listExample.ShowLinkedListExample();
+    }
+
+    public static void runSortsExample() {
+        SortEx sortExample = new SortEx();
+        sortExample.ShowSortExample();
     }
 }
