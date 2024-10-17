@@ -16,8 +16,23 @@ public class SortEx {
 
         // bubble sort
         int[] bubbleArray = originalArray.clone();
-        sort.bubble(bubbleArray);
+        sort.bubbleSort(bubbleArray);
         System.out.println("Bubble Sort: " + Arrays.toString(bubbleArray));
+
+        // selection sort
+        int[] selectionArray = originalArray.clone();
+        sort.selectionSort(selectionArray);
+        System.out.println("Selection Sort: " + Arrays.toString(selectionArray));
+
+        // insertion sort 
+        int[] insertionArray = originalArray.clone();
+        sort.insertionSort(insertionArray);
+        System.out.println("Insertion Sort: " + Arrays.toString(insertionArray));
+
+        // merge sort
+        int[] mergeArray = originalArray.clone();
+        sort.mergeSort(mergeArray);
+        System.out.println("Merge Sort: " + Arrays.toString(mergeArray));
     }
 
 }
