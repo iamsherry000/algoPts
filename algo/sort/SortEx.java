@@ -33,6 +33,11 @@ public class SortEx {
         int[] mergeArray = originalArray.clone();
         sort.mergeSort(mergeArray);
         System.out.println("Merge Sort: " + Arrays.toString(mergeArray));
+
+        // quick sort
+        int[] quickArray = originalArray.clone();
+        sort.quickSort(quickArray);
+        System.out.println("quick Sort: " + Arrays.toString(quickArray));
     }
 
 }

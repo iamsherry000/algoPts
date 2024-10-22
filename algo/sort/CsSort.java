@@ -61,12 +61,6 @@ public class CsSort {
 
     }
 
-    public static void swap(int[] array, int a, int b) {
-        int temp = array[a];
-        array[a] = array[b];
-        array[b] = temp;
-    }
-
     public void merge(int[] finalArray, int[] left, int[] right) {
         int tempLeft = 0, tempRight = 0, tempFinal = 0;
 
@@ -88,5 +82,37 @@ public class CsSort {
             finalArray[tempFinal++] = right[tempRight++];
         }
     }
-    
+
+    public void quickSort(int[] quickArray) {
+        int size = quickArray.length;
+        quickSort(quickArray, 0, size-1);
+    }
+
+    private void quickSort(int[] array, int L, int R) {
+        if(L < R) {
+            int pivotIndex = partition(array, L, R);
+            quickSort(array, L, pivotIndex - 1);
+            quickSort(array, pivotIndex + 1, R);
+        }
+    }
+
+    private int partition(int[] array, int L, int R) {
+        int pivot = array[R]; // last one as pivot
+        int leftIndex = L - 1;
+        for(int i = L; i < R; i++) {
+            if(array[i] < pivot) {
+                leftIndex++;
+                swap(array, leftIndex, i);
+            }
+        }
+        swap(array, leftIndex+1, R);
+        return leftIndex + 1; // return pivot 
+    }
+
+    public static void swap(int[] array, int a, int b) {
+        int temp = array[a];
+        array[a] = array[b];
+        array[b] = temp;
+    }
+
 }
