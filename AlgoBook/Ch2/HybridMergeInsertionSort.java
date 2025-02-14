@@ -2,7 +2,7 @@
  * Tomsort : Merge Sort + Insertion Sort 
  * can be seen in python sort() or java Arrays.sort()
  */
-package AlgoBook.Ch2;
+
 
 import java.util.Arrays;
 

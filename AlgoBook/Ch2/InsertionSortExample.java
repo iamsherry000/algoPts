@@ -5,7 +5,7 @@
  * and insert it into the correct position in the left hand.
  */
 
-package AlgoBook.Ch2;
+
 
 import java.util.Arrays;
 

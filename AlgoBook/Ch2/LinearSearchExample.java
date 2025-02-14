@@ -1,7 +1,7 @@
 /*
  * p 22. 2.1-3 exercises.
  */
-package AlgoBook.Ch2;
+
 
 public class LinearSearchExample {
     public static void main(String[] args) {

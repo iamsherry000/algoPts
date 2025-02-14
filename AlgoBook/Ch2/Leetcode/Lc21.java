@@ -1,4 +1,4 @@
-package AlgoBook.Ch2.Ch2Leetcode;
+package Leetcode;
 
 class ListNode {
     int val;
