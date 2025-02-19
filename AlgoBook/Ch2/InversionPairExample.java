@@ -6,8 +6,14 @@
  */
 // package AlgoBook.Ch2;
 
-// public class InversionPairExample {
-//     public void runTestCase() {
-//         int[] array = {}
-//     }
-// }
+public class InversionPairExample {
+    
+    public static void main(String[] args) {
+        runTestCase();
+    }
+    
+    public static void runTestCase() {
+        int[] array = {2, 3, 8, 6, 1};
+        
+    }
+}

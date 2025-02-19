@@ -17,8 +17,20 @@
     
     c. Leads to next one InversionPairExample.java
 
--  InversionPairExample.java
+- BubbleSortExample.java
+
+    a. Problmem 2.2
+
+- HornerRuleExample.java
+
+    a. Problem 2.3
+
+    b. ![alt text](image.png)
+
+-  InversionPairExample.java 
     
-    a. Use merge sort to be efficient 
+    a. Problem 2.4
+    
+    b. Use merge sort to be efficient 
 
 - 
